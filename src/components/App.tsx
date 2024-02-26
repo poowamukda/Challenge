@@ -14,6 +14,9 @@ import EP4 from './EP4';
 import EP5 from './EP5';
 import EP6 from './EP6';
 
+/*ยกส่วน Avatar*/
+import EP7 from './EP7';
+
 ////////////////////////////////////////////
 
 ////////////////////////////////////////////
@@ -35,7 +38,10 @@ function App() {
 
 {/* Props */}
 {/* <EP5 /> */}
-<EP6 />
+{/* <EP6 /> */}
+<EP7 />
+
+
     </React.Fragment>
 
 

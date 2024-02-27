@@ -4,7 +4,7 @@ interface Props {
     img: string;
     tel: string;
     email: string;
-    text:string;
+    text: string;
 }
 const Card = (props: Props) => {
     return (

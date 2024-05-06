@@ -1,13 +1,9 @@
 import React from 'react'
-import Card from './Card';
-import { Contact } from './interface';
-
-
-function Avatar(contact:Contact) {
+function Avatar(props) {
   return (
 
     <React.Fragment>
-
+      <img className="circle-img" src={props.imgURL} alt="avatar_img" />
     </React.Fragment>
 
 

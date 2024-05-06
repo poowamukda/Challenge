@@ -7,6 +7,9 @@ import Contacts from './contacts';
 function Props() {
   return (
     <React.Fragment>
+
+
+      {/* แบบที่ 1 */}
       <Card
         name="Beyonce"
         img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
@@ -32,7 +35,7 @@ function Props() {
       />
 
 
-
+      {/* แบบที่ 2 */}
       <Card
         name={Contacts[0].name}
         img={Contacts[0].imgURL}

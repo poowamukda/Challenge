@@ -1,5 +1,5 @@
 import { Contact } from './interface';
-const contacts = [
+const scontacts = [
     {
       id: 1,
       name: "Beyonce",
@@ -29,5 +29,5 @@ const contacts = [
     }
   ];
   
-  export default contacts;
+  export default scontacts;
   

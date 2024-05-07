@@ -1,5 +1,14 @@
 import React from 'react'
-function Avatar(props) {
+import Props from './Props.view'
+interface Props{
+  name: string;
+  imgURL: string;
+  phone: string;
+  email: string;
+  text:string;
+
+}
+function Avatar(props:Props) {
   return (
 
     <React.Fragment>

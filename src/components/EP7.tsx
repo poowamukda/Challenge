@@ -1,6 +1,5 @@
 import React from 'react'
 import Props from './EP7_React_DevTools/Props.view'
-import Avatar from './EP7_React_DevTools/Avatar'
 function EP7() {
     return (
         <React.Fragment>

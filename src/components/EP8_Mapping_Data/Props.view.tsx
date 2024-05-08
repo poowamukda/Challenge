@@ -6,16 +6,16 @@ import Avatar from "./Avatar";
 function Props() {
   return (
     <React.Fragment>
-      <Avatar
+      {/* <Avatar
         name="Beyonce"
         imgURL="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
         phone="+123 456 789"
         email="b@beyonce.com"
         text="ใน TEXT"
-      />
+      /> */}
 
       {/* แบบที่ 1 */}
-      <Card
+      {/* <Card
         name="Beyonce"
         imgURL="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
         phone="+123 456 789"
@@ -37,10 +37,10 @@ function Props() {
         phone="+918 372 574"
         email="gmail@chucknorris.com"
         text="ใน TEXT"
-      />
+      /> */}
 
       {/* แบบที่ 2 จาก contacts*/}
-      <Card
+      {/* <Card
         name={Contacts[0].name}
         imgURL={Contacts[0].imgURL}
         phone={Contacts[0].phone}
@@ -60,7 +60,7 @@ function Props() {
         phone={Contacts[2].phone}
         email={Contacts[2].email}
         text={Contacts[2].text}
-      />
+      /> */}
     </React.Fragment>
   );
 }

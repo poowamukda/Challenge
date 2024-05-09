@@ -18,7 +18,9 @@ import EP6 from './EP6';
 // import EP7 from './EP7';
 
 /*Mapping Data to Componets Practice */
-import EP8 from './EP8';
+// import EP8 from './EP8';
+import EP9 from './EP9'; /* Challenge*/
+
 
 ////////////////////////////////////////////
 
@@ -43,8 +45,8 @@ function App() {
 {/* <EP5 /> */}
 {/* <EP6 /> */}
 {/* <EP7 /> */}
-<EP8 />
-
+{/* <EP8 /> */}
+<EP9 />
 
     </React.Fragment>
 

@@ -1,8 +1,9 @@
 import React from "react";
 import Card from "./Card";
-import contacts from "./contacts";
+import Contacts from "./contacts";
 
 interface Req_Contacts {
+    id: number;
     name: string;
     imgURL: string;
     email: string;
@@ -13,10 +14,12 @@ interface Req_Contacts {
 function createCard(contacts: Req_Contacts) {
     return (
         <Card
+            key={contacts.id}  /* KEY ไม่แสดง*/
+            id={contacts.id}
             name={contacts.name}
             imgURL={contacts.imgURL}
             phone={contacts.phone}
-            email={contacts.phone}
+            email={contacts.email}
             text={contacts.text}
         />
     )
@@ -27,7 +30,7 @@ function Mapping() {
         <React.Fragment>
             {
                 // อาเรย์จาก contacts from "./contacts"
-                contacts.map(createCard)
+                Contacts.map(createCard)
             }
         </React.Fragment>
     );

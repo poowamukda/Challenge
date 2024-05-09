@@ -5,7 +5,7 @@ function EP8() {
     return (
         <React.Fragment>
             <h1 >Mapping Data to Componets Practice </h1>
-            <Props/>
+            {/* <Props/> */}
             <Mapping />
         </React.Fragment>
     )

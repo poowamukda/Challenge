@@ -8,6 +8,9 @@ function card(contacts: Contact) {
     <React.Fragment>
       <div className="card">
         <div className="top">
+          <h3>
+            {contacts.id}
+          </h3>
           <h2 className="name">{contacts.name}</h2>
           {/* <img className="circle-img" src={contacts.imgURL} alt="avatar_img" /> */}
 
@@ -15,11 +18,9 @@ function card(contacts: Contact) {
             name="Beyonce"
             // imgURL="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
             imgURL={contacts.imgURL}
-            phone="+123 456 789"
-            email="b@beyonce.com"
-            text="ใน TEXT"
           />
         </div>
+        
         <div className="bottom">
           <Details detailInfo={contacts.phone} />
           <Details detailInfo={contacts.email} />
@@ -31,4 +32,4 @@ function card(contacts: Contact) {
 }
 export default card;
 
-// name={Contacts[0].name}
+

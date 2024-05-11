@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles.css';
 
 interface Emojipedia {
   id?: string;
@@ -11,7 +10,6 @@ interface Emojipedia {
 function card(emojipedia: Emojipedia) {
   return (
     <div>
-
       <dl className="dictionary">
         <div className="term">
           <dt>
@@ -21,12 +19,10 @@ function card(emojipedia: Emojipedia) {
             <span>{emojipedia.name}</span>
           </dt>
           <dd>
-           {emojipedia.meaning}
+            {emojipedia.meaning}
           </dd>
         </div>
       </dl>
-
-
     </div>
   )
 }

@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
 // import './styles.css';
-import './components/EP6_PROOS/styles.css';
+// import './components/EP6_PROOS/styles.css';
+// import './components/EP9_Challenge_Mapping/styles.css'
+
 import reportWebVitals from './reportWebVitals';
 
 import App from './components/App';

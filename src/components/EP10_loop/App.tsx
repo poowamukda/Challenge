@@ -1,12 +1,10 @@
 import { log } from 'console';
 import React from 'react'
-
+import Challenge from './challenge';
 // interface X{
 //     dubble:Array;
 // } 
 var numbers = [3, 56, 2, 48, 5];
-
-
 
 // MAP 1 
 function double(x: number) {
@@ -22,8 +20,6 @@ var newNumber4: number[] = numbers.map(function (x: number) {
 console.log(newNumber4);
 
 
-
-
 // forEach 1
 var newNumber2: number[] = [];
 function double2(x: number) {
@@ -31,7 +27,6 @@ function double2(x: number) {
 }
 numbers.forEach(double2);
 console.log(newNumber2);
-
 
 // forEach 2
 var newNumber3: number[] = [];
@@ -42,12 +37,30 @@ console.log(newNumber3);
 
 
 
-
 // fillter
-const newNumber5 = numbers.filter((num)=>{
-return num>10
+const newNumber5 = numbers.filter((num) => {
+    return num > 10
 })
 console.log(newNumber5);
+//reduce
+var newNumber6 = numbers.reduce((accumulation: number, currentNumber: number) => {
+    return accumulation + currentNumber;
+}, 0);
+console.log(newNumber6);
+
+
+/*Find and FindIndex */
+// ตัวอย่างของอาร์เรย์ที่ต้องการทำการค้นหา
+
+// ใช้ find เพื่อค้นหาเลขคู่ในอาร์เรย์
+const evenNumber: number | undefined = numbers.find((num: number) => num % 2 === 0);
+
+if (evenNumber !== undefined) {
+    console.log("เลขคู่ที่พบคือ:", evenNumber); // พิมพ์ค่าเลขคู่ที่พบ
+} else {
+    console.log("ไม่พบเลขคู่ในอาร์เรย์"); // พิมพ์ถ้าไม่พบเลขคู่
+}
+
 
 
 
@@ -55,7 +68,13 @@ console.log(newNumber5);
 
 function loop() {
     return (
-        <div> <h1> Javascript ES6 Map/Filter/Reduce </h1></div>
+        <>
+            <h1>
+                Javascript ES6 Map/Filter/Reduce
+            </h1>
+
+
+        </>
     )
 }
 

@@ -19,10 +19,10 @@ import EP6 from './EP6';
 
 /*Mapping Data to Componets Practice */
 // import EP8 from './EP8';
-// import EP9 from './EP9'; /* Challenge*/
+import EP9 from './EP9'; /* Challenge*/
 
 /* Javascript ES6 Map/Filter/Reduce*/
-import EP10 from '../components/EP10_loop/App'
+// import EP10 from '../components/EP10_loop/App'
 
 ////////////////////////////////////////////
 
@@ -48,8 +48,8 @@ function App() {
       {/* <EP6 /> */}
       {/* <EP7 /> */}
       {/* <EP8 /> */}
-      {/* <EP9 /> */}
-      <EP10 />
+      <EP9 />
+      {/* <EP10 /> */}
 
     </React.Fragment>
 

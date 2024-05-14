@@ -1,31 +1,31 @@
-import React from 'react'
-import Emojipedia from './emojipedia'
+import React from "react";
+import Emojipedia from "./emojipedia";
 
-// interface Emoji {
-//     id: number;
-//     emoji: string;
-//     name: string;
-//     meaning: string;
 
+const result: string[] = [];
+Emojipedia.map((emojipedia) => {
+  result.push(emojipedia.meaning.substring(0, 2));
+});
+console.log(result);
+
+
+// const Ans: string[] = [];
+// function fillterText(meaning: string) {
+//   let result = meaning.substring(0, 2);
+//   Ans.push(result);
+//   return null;
 // }
 
-
-
-
 function challenge() {
-    return (
-        <div>
-            <h1>
-
-            </h1>
-
-
-
-
-
-
-        </div>
-    )
+  return (
+    <div>
+      {/* {Emojipedia.map((emojipedia, index) => fillterText(emojipedia.meaning))} */}
+    </div>
+  );
 }
 
-export default challenge
+
+
+// console.log(Ans);
+
+export default challenge;

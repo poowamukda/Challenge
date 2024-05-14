@@ -1,4 +1,11 @@
-const emojipedia = [
+
+interface Req_Emojipedia {
+  id?: number;
+  emoji: string;
+  name: string;
+  meaning: string;
+}
+const emojipedia :Req_Emojipedia[]= [
     {
       id: 1,
       emoji: "💪",

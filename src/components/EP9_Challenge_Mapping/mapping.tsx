@@ -9,16 +9,16 @@ function mapping() {
     return (
         <React.Fragment>
 
-            {/* {
-                Emojipedia.map((emojipedia) => {
+            {
+                Emojipedia.map((emojipedia) => (
                     <Card
                         emoji={emojipedia.emoji}
                         name={emojipedia.name}
                         meaning={emojipedia.meaning}
                     />
-                }
                 )
-            } */}
+                )
+            }
 
         </React.Fragment>
     );

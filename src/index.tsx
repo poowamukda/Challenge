@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom/client';
 // import './styles.css';
 // import './components/EP6_PROOS/styles.css';
 // import './components/EP9_Challenge_Mapping/styles.css'
+// import './components/EP11_CreateCard/styles.css'
+import './components/EP11_Challenge/styles.css'
 
 import reportWebVitals from './reportWebVitals';
 

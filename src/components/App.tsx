@@ -19,10 +19,13 @@ import EP6 from './EP6';
 
 /*Mapping Data to Componets Practice */
 // import EP8 from './EP8';
-import EP9 from './EP9'; /* Challenge*/
+// import EP9 from './EP9'; /* Challenge*/
 
 /* Javascript ES6 Map/Filter/Reduce*/
 // import EP10 from '../components/EP10_loop/App'
+
+// import EP11 from './EP11_CreateCard/Card'
+import EP11challenge from './EP11_Challenge/App'
 
 ////////////////////////////////////////////
 
@@ -48,9 +51,10 @@ function App() {
       {/* <EP6 /> */}
       {/* <EP7 /> */}
       {/* <EP8 /> */}
-      <EP9 />
+      {/* <EP9 /> */}
       {/* <EP10 /> */}
-
+      {/* <EP11 /> */}
+      < EP11challenge />
     </React.Fragment>
 
 

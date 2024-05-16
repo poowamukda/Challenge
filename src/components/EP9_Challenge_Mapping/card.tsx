@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface Emojipedia {
-  id?: string;
+  id?: number;
   emoji: string;
   name: string;
   meaning: string;

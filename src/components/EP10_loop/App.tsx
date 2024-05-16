@@ -89,7 +89,10 @@ if (evenNumber !== undefined) {
 } else {
   console.log("ไม่พบเลขคู่ในอาร์เรย์"); // พิมพ์ถ้าไม่พบเลขคู่
 }
+
 Challenge();
+
+
 function loop() {
   return (
     <>

@@ -6,7 +6,6 @@ import EP1 from './EP1';
 import EP2 from './EP2';
 import EP3 from './EP3.view';
 
-
 /* Keeper */
 import EP4 from './EP4';
 
@@ -25,7 +24,8 @@ import EP6 from './EP6';
 // import EP10 from '../components/EP10_loop/App'
 
 // import EP11 from './EP11_CreateCard/Card'
-import EP11challenge from './EP11_Challenge/App'
+// import EP11challenge from './EP11_Challenge/App'
+import EP11LoginAndRegister from './EP11_Challenge_Login&Register/App'
 
 ////////////////////////////////////////////
 
@@ -54,7 +54,8 @@ function App() {
       {/* <EP9 /> */}
       {/* <EP10 /> */}
       {/* <EP11 /> */}
-      < EP11challenge />
+      {/* < EP11challenge /> */}
+      <EP11LoginAndRegister />
     </React.Fragment>
 
 

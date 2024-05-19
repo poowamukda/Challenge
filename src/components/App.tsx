@@ -25,8 +25,11 @@ import EP6 from './EP6';
 
 // import EP11 from './EP11_CreateCard/Card'
 // import EP11challenge from './EP11_Challenge/App'
-import EP11LoginAndRegister from './EP11_Challenge_Login&Register/App'
+// import EP11LoginAndRegister from './EP11_Challenge_Login&Register/App'
 
+/*EP 12 state */
+// import EP12_State from './EP12_State/App'
+import EP12_useState from './EP12_useState/App'
 ////////////////////////////////////////////
 
 ////////////////////////////////////////////
@@ -55,7 +58,9 @@ function App() {
       {/* <EP10 /> */}
       {/* <EP11 /> */}
       {/* < EP11challenge /> */}
-      <EP11LoginAndRegister />
+      {/* <EP11LoginAndRegister /> */}
+      {/* <EP12_State /> */}
+      <EP12_useState />
     </React.Fragment>
 
 

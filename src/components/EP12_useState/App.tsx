@@ -1,20 +1,23 @@
 import React, { useState } from "react";
-import { setInterval } from "timers/promises";
-var currentTime = new Date().toLocaleTimeString();
+// import { setInterval } from "timers/promises";
+var now = new Date().toLocaleTimeString();
 
 function App() {
-    // const [autoTime, setAutoTime] = useState(currentTime);
-    // function getAutoTime() {
-    //     currentTime = new Date().toLocaleTimeString();
-    //     setAutoTime(currentTime);
+    setInterval(getAutoTime, 1000);
 
-    // }
-    // setInterval(setAutoTime, 1000);
+    const [autoTime, setAutoTime] = useState(now);
+
+    function getAutoTime() {
+        let currentTime = new Date().toLocaleTimeString();
+        setAutoTime(currentTime);
+
+    }
 
 
-    const [time, setTime] = useState(currentTime);
+
+    const [time, setTime] = useState(now);
     function getTime() {
-        currentTime = new Date().toLocaleTimeString();
+        let currentTime = new Date().toLocaleTimeString();
         setTime(currentTime);
         console.log(currentTime);
     }
@@ -26,7 +29,7 @@ function App() {
 
     return (
         <div className="container">
-            <h1>{time}</h1>
+            <h1>{autoTime}</h1>
             <button >Dynamic Time</button>
             <br />
             <h1>{time}</h1>

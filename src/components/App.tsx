@@ -29,7 +29,8 @@ import EP6 from './EP6';
 
 /*EP 12 state */
 // import EP12_State from './EP12_State/App'
-import EP12_useState from './EP12_useState/App'
+// import EP12_useState from './EP12_useState/App'
+import EP13_Destructuring from './EP13_Destructuring/index'
 ////////////////////////////////////////////
 
 ////////////////////////////////////////////
@@ -60,7 +61,9 @@ function App() {
       {/* < EP11challenge /> */}
       {/* <EP11LoginAndRegister /> */}
       {/* <EP12_State /> */}
-      <EP12_useState />
+      {/* <EP12_useState /> */}
+      <EP13_Destructuring />
+
     </React.Fragment>
 
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 // import './index.css';
 // import './styles.css';
 // import './components/EP6_PROOS/styles.css';
@@ -7,14 +7,15 @@ import ReactDOM from 'react-dom/client';
 // import './components/EP11_CreateCard/styles.css'
 // import './components/EP11_Challenge/styles.css'
 // import './components/EP12_State/styles.css'
-import './components/EP12_useState/styles.css'
+// import './components/EP12_useState/styles.css'
+import "./components/EP14_EvenHanding/styles.css";
 
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 
-import App from './components/App';
+import App from "./components/App";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>

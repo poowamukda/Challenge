@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
 import ReactDOM from "react-dom";
-import Heading from './Heading';
-import Footer from './Footer';
-import EP1 from './EP1';
-import EP2 from './EP2';
-import EP3 from './EP3.view';
+import Heading from "./Heading";
+import Footer from "./Footer";
+import EP1 from "./EP1";
+import EP2 from "./EP2";
+import EP3 from "./EP3.view";
 
 /* Keeper */
-import EP4 from './EP4';
+import EP4 from "./EP4";
 
 /* Props*/
-import EP5 from './EP5';
-import EP6 from './EP6';
+import EP5 from "./EP5";
+import EP6 from "./EP6";
 
 /*ยกส่วน Avatar*/
 // import EP7 from './EP7';
@@ -30,22 +30,26 @@ import EP6 from './EP6';
 /*EP 12 state */
 // import EP12_State from './EP12_State/App'
 // import EP12_useState from './EP12_useState/App'
-import EP13_Destructuring from './EP13_Destructuring/index'
+
+/*EP 13 Destructuring */
+// import EP13_Destructuring from './EP13_Destructuring/index'
+
+/* EP 14 Even Handing in react*/
+// import EP14_EvenHanding from "./EP14_EvenHanding/App";
+import EP14_Complex from './EP14_Complex/App'
+
 ////////////////////////////////////////////
 
 ////////////////////////////////////////////
 
 function App() {
   return (
-
     <React.Fragment>
-
       {/* <Heading />
       <EP1 />
       <EP2 />
       <EP3 />
       <Footer /> */}
-
 
       {/*  Keeper */}
       {/* <EP4 /> */}
@@ -62,17 +66,17 @@ function App() {
       {/* <EP11LoginAndRegister /> */}
       {/* <EP12_State /> */}
       {/* <EP12_useState /> */}
-      <EP13_Destructuring />
+      {/* <EP13_Destructuring /> */}
+      {/* <EP14_EvenHanding /> */}
+      <EP14_Complex />
+
+
+
+
+
 
     </React.Fragment>
-
-
-  )
+  );
 }
 
-
-
-
-
-
-export default App
+export default App;

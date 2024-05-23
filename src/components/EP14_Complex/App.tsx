@@ -18,6 +18,34 @@ function App() {
 
   function handleChange(ev: React.ChangeEvent<HTMLInputElement>) {
 
+    const newValue = ev.target.value;
+    const inputName = ev.target.name;
+    // console.log(ev.target);
+    // console.log("inputName : " + inputName);
+    // console.log("newValue : " + newValue);
+
+    interface Name {
+      fName: string;
+      lName: string;
+    }
+
+    setFullName((prevValue: Name) => {
+      if (inputName === "fName") {
+        console.log("-----------> " + prevValue.fName);
+        /*คือการส่ง คู่ key-value อื่นๆ ในoppjectไปด้วย*/
+        return { ...prevValue, fName: newValue };
+      }
+      else if (inputName === "lName") {
+        return { ...prevValue, lName: newValue };
+      }
+      else {
+        return prevValue;
+      }
+    }
+    );
+
+
+
   }
 
 

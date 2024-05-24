@@ -1,70 +1,76 @@
-import React from "react";
-import { useEffect, useState } from "react";
-
-
+import React, { useState } from "react";
+interface Regis {
+  fName: string,
+  lName: string,
+  email: string,
+}
 function App() {
-  const [fullName, setFullName] = useState({
+  const [color, setColor] = useState<boolean>(false);
+  const [fullRegis, setFullRegis] = useState({
     fName: "",
-    lName: ""
+    lName: "",
+    email: "",
   });
-
-  let [color, setColor] = useState<boolean>(true);
+  const [dataRegis, setDataRegis] = useState({
+    fName: "",
+    lName: "",
+    email: "",
+  });
   function handleMouseMove() {
-    setColor(false);
-  }
-  function handleMouseOut() {
     setColor(true);
   }
+  function handleMouseOut() {
+    setColor(false);
+  }
 
-  function handleChange(ev: React.ChangeEvent<HTMLInputElement>) {
-
-    const newValue = ev.target.value;
-    const inputName = ev.target.name;
-    // console.log(ev.target);
-    // console.log("inputName : " + inputName);
-    // console.log("newValue : " + newValue);
-
-    interface Name {
-      fName: string;
-      lName: string;
-    }
-
-    setFullName((prevValue: Name) => {
-      if (inputName === "fName") {
-        console.log("-----------> " + prevValue.fName);
-        /*คือการส่ง คู่ key-value อื่นๆ ในoppjectไปด้วย*/
-        return { ...prevValue, fName: newValue };
+  function handleClick(ev: React.MouseEvent<HTMLButtonElement>) {
+    ev.preventDefault();
+    setDataRegis(
+      {
+        fName: fullRegis.fName,
+        lName: fullRegis.lName,
+        email: fullRegis.email
       }
-      else if (inputName === "lName") {
-        return { ...prevValue, lName: newValue };
-      }
-      else {
-        return prevValue;
-      }
-    }
-    );
-
-
-
+    )
   }
 
 
+  function handleChange(ev: React.ChangeEvent<HTMLInputElement>) {
+    const { name, value } = ev.target;
+    const nameValue = name;
+    const inputValue = value;
+
+    setFullRegis((prevValue: Regis) => {
+      if (nameValue === "fName") {
+        return { ...prevValue, fName: inputValue }
+      } else if (nameValue === "lName") {
+        return { ...prevValue, lName: inputValue }
+      } else if (nameValue === "email") {
+        return { ...prevValue, email: inputValue }
+      } else {
+        return prevValue;
+      }
+    });
+  }
 
   return (
     <div className="container">
-      <h1>Hello{" " + fullName.fName + " " + fullName.lName}</h1>
-
-      <form >
-        <input name="fName" placeholder="First Name"
-          onChange={handleChange}
-          value={fullName.fName}
-        />
-        <input name="lName" placeholder="Last Name"
-          onChange={handleChange}
-          value={fullName.lName}
-        />
-        <button onMouseMove={handleMouseMove} onMouseOut={handleMouseOut} style={color ? { backgroundColor: "white" } : { backgroundColor: "black" }}
-        >Submit
+      <h1>Hello {dataRegis.fName + " " + " " + dataRegis.lName}</h1>
+      <p>{dataRegis.email}</p>
+      <br />
+      <form>
+        <input name="fName" type="text" placeholder="First Name" value={fullRegis.fName} onChange={handleChange} />
+        <input name="lName" type="text" placeholder="Last Name" value={fullRegis.lName} onChange={handleChange} />
+        <input name="email" type="email" placeholder="Your Email" value={fullRegis.email} onChange={handleChange} />
+        <button
+          onClick={handleClick}
+          onMouseMove={handleMouseMove}
+          onMouseOut={handleMouseOut}
+          style={
+            color ? { backgroundColor: "black" } : { backgroundColor: "white" }
+          }
+        >
+          Submit
         </button>
       </form>
     </div>
@@ -72,3 +78,11 @@ function App() {
 }
 
 export default App;
+
+// onMouseOut;
+// onMouseMove;
+// onClick;
+
+// handleMouseOut;
+// handleMouseMove;
+// handleClick;

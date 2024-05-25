@@ -41,15 +41,22 @@ function App() {
     const inputValue = value;
 
     setFullRegis((prevValue: Regis) => {
-      if (nameValue === "fName") {
-        return { ...prevValue, fName: inputValue }
-      } else if (nameValue === "lName") {
-        return { ...prevValue, lName: inputValue }
-      } else if (nameValue === "email") {
-        return { ...prevValue, email: inputValue }
-      } else {
-        return prevValue;
+      // if (nameValue === "fName") {
+      //   return { ...prevValue, fName: inputValue }
+      // } else if (nameValue === "lName") {
+      //   return { ...prevValue, lName: inputValue }
+      // } else if (nameValue === "email") {
+      //   return { ...prevValue, email: inputValue }
+      // } else {
+      //   return prevValue;
+      // }
+
+
+      return {
+        ...prevValue,
+        [name]: value
       }
+
     });
   }
 

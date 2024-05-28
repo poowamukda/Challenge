@@ -22,6 +22,10 @@ function App() {
   function handleMouseOut() {
     setColor(false);
   }
+  // var key = "happyCount";
+  // var obj = {}
+  // obj[key] = someValueArray;
+  // MyArray.push(obj);
 
   function handleClick(ev: React.MouseEvent<HTMLButtonElement>) {
     ev.preventDefault();

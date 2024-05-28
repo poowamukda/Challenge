@@ -8,7 +8,8 @@ import ReactDOM from "react-dom/client";
 // import './components/EP11_Challenge/styles.css'
 // import './components/EP12_State/styles.css'
 // import './components/EP12_useState/styles.css'
-import "./components/EP14_EvenHanding/styles.css";
+// import "./components/EP14_EvenHanding/styles.css";
+import "./components/EP15_SpreadOperatorPractice/styles.css"
 
 import reportWebVitals from "./reportWebVitals";
 

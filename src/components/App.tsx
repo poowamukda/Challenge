@@ -36,7 +36,11 @@ import EP6 from "./EP6";
 
 /* EP 14 Even Handing in react*/
 // import EP14_EvenHanding from "./EP14_EvenHanding/App";
-import EP14_Complex from './EP14_Complex/App'
+// import EP14_Complex from './EP14_Complex/App'
+
+
+/*EP 15 EP15 Spread Operator Practice */
+import EP15_SpreadOperatorPractice from "./EP15_SpreadOperatorPractice/App"
 
 ////////////////////////////////////////////
 
@@ -68,8 +72,8 @@ function App() {
       {/* <EP12_useState /> */}
       {/* <EP13_Destructuring /> */}
       {/* <EP14_EvenHanding /> */}
-      <EP14_Complex />
-
+      {/* <EP14_Complex /> */}
+      <EP15_SpreadOperatorPractice />
 
 
 

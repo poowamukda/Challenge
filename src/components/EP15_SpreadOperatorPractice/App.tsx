@@ -1,9 +1,8 @@
 import { log } from "console";
 import React, { useState } from "react";
-import ToDoItem from "./ToDoItem"
+import ToDoItem from "./ToDoItem";
 
 function App() {
-
   const [inputText, setInputTex] = useState("");
   const [items, setItems] = useState<string[]>([]);
 
@@ -18,6 +17,10 @@ function App() {
       return [...prevItems, inputText];
     });
     setInputTex("");
+  }
+
+  function deleteItem() {
+    console.log("DeleteItem");
 
   }
 
@@ -40,21 +43,17 @@ function App() {
       </div>
       <div>
         <ul>
+          {items.map((todoItem, index) => {
+            return < ToDoItem
+              key={index}
+              inputItem={todoItem}
+              onChecked={deleteItem}
 
-          {
-            items.map((todoItem: string) => {
-              return (
-                <ToDoItem
-                  inputItem={todoItem}
-                />
-              )
-            }
-            )
-          }
-
+            />;
+          })}
         </ul>
       </div>
-    </div >
+    </div>
   );
 }
 

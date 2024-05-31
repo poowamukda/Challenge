@@ -43,7 +43,8 @@ function App() {
       // value={ name }
       />
 
-      <button onClick={handleClick} onMouseMove={handleMouseMove} onMouseOut={handleMouseOut} style={color ? { backgroundColor: "white" } : { backgroundColor: "black" }}>
+      <button onClick={handleClick} onMouseMove={handleMouseMove} onMouseOut={handleMouseOut}
+        style={color ? { backgroundColor: "white" } : { backgroundColor: "black" }}>
         Submit
       </button>
     </div>
